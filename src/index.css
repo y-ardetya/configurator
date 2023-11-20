@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #efe9e9;
+  box-sizing: border-box;
+}
+
+.first  {
+  height: 100vh; /* viewport height */
+  width: 55vw; /* viewport width */
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  right: -5vw; /* viewport width */
+  background: #efe9e9 center/cover;
+  -webkit-mask:radial-gradient(100% 100% at top, #efe9e9 60%, #efe9e9 61%);
+          mask:radial-gradient(100% 100% at top, #efe9e9 60%, #efe9e9 61%);
+}
+.bottom {
+  transform: rotate(-90deg);
+  -webkit-mask:radial-gradient(100% 100% at top, #0000 60%, #efe9e9 61%);
+          mask:radial-gradient(100% 100% at top, #0000 60%, #efe9e9 61%);
+}
+
+
